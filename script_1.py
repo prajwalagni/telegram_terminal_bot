@@ -1,0 +1,38 @@
+# Create configuration template
+config_template = '''# Telegram Terminal Bot Configuration File
+# ================================================
+
+# Bot Token from @BotFather
+BOT_TOKEN="YOUR_BOT_TOKEN_HERE"
+
+# Authorized user IDs (comma-separated)
+# Get your user ID by messaging @userinfobot
+AUTHORIZED_USERS="123456789,987654321"
+
+# Authorized group chat IDs (comma-separated, optional)
+# Get group ID using the bot's /network command after adding bot to group
+AUTHORIZED_GROUPS="-1001234567890,-1009876543210"
+
+# Main admin user ID (for critical operations like updates)
+ADMIN_USER_ID="123456789"
+
+# Update URL (optional, for self-update feature)
+UPDATE_URL="https://raw.githubusercontent.com/yourusername/yourrepo/main/tgbot.sh"
+
+# System monitoring settings
+BATTERY_LOW_THRESHOLD=20
+BATTERY_HIGH_THRESHOLD=90
+DISK_USAGE_THRESHOLD=90
+MEMORY_USAGE_THRESHOLD=90
+
+# Notification settings
+SEND_STARTUP_NOTIFICATIONS=true
+SEND_SHUTDOWN_NOTIFICATIONS=true
+SEND_BATTERY_NOTIFICATIONS=true
+SEND_SYSTEM_ALERTS=true
+'''
+
+with open('config.env.template', 'w') as f:
+    f.write(config_template)
+
+print("Configuration template 'config.env.template' created!")

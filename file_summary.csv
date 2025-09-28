@@ -1,0 +1,11 @@
+File,Type,Purpose,Lines,Executable
+tgbot.sh,Core Script,Main bot functionality,1000+,Yes
+config.env.template,Configuration,Settings template,50,No
+install.sh,Setup,Complete installation,300+,Yes
+uninstall.sh,Setup,Complete removal,150+,Yes
+system_monitor.sh,Monitoring,System alerts,250+,Yes
+test.sh,Testing,Configuration testing,200+,Yes
+setup_check.sh,Utility,Quick verification,50,Yes
+README.md,Documentation,Complete guide,800+,No
+CHANGELOG.md,Documentation,Version history,100,No
+LICENSE,Legal,MIT License,30,No
