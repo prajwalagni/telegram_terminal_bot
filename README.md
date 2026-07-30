@@ -56,7 +56,8 @@ The bot requires the following packages (automatically installed by the installe
 
 1. **Download the installation files:**
    ```bash
-   wget https://github.com/prajwalagni/telegram-terminal-bot/archive/main.zip
+   wget https://github.com/prajwalagni/telegram-
+_terminal_bot/archive/main.zip
    unzip main.zip
    cd telegram-terminal-bot-main
    ```
