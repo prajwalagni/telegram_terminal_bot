@@ -56,7 +56,7 @@ The bot requires the following packages (automatically installed by the installe
 
 1. **Download the installation files:**
    ```bash
-   wget https://github.com/yourusername/telegram-terminal-bot/archive/main.zip
+   wget https://github.com/prajwalagni/telegram-terminal-bot/archive/main.zip
    unzip main.zip
    cd telegram-terminal-bot-main
    ```
@@ -335,7 +335,18 @@ sudo ufw status
 **Screenshot not working:**
 ```bash
 # Install screenshot tools
+# Debian / Ubuntu
 sudo apt-get install gnome-screenshot scrot imagemagick
+# CentOS 7 / RHEL 7
+sudo yum install ImageMagick scrot # gnome-screenshot may require the GNOME desktop repositories
+# CentOS 8 / RHEL 8
+sudo dnf install ImageMagick scrot
+# Fedora 34–36
+sudo dnf install gnome-screenshot scrot ImageMagick
+# Arch Linux
+sudo pacman -S gnome-screenshot scrot imagemagick
+# openSUSE Leap 15.x
+sudo zypper install gnome-screenshot scrot ImageMagick
 
 # Set display environment
 export DISPLAY=:0
@@ -347,7 +358,18 @@ scrot test.png
 **Audio control not working:**
 ```bash
 # Install audio tools
+# Debian / Ubuntu
 sudo apt-get install alsa-utils pulseaudio-utils
+# CentOS 7 / RHEL 7
+sudo yum install alsa-utils pulseaudio-utils
+# CentOS 8 / RHEL 8
+sudo dnf install alsa-utils pulseaudio-utils
+# Fedora 34–36
+sudo dnf install alsa-utils pulseaudio-utils
+# Arch Linux
+sudo pacman -S alsa-utils libpulse
+# openSUSE Leap 15.x
+sudo zypper install alsa-utils pulseaudio-utils
 
 # Test audio control manually
 amixer sset Master 50%
@@ -439,7 +461,18 @@ sudo systemctl start tgbot.service
 
 3. **Update system packages:**
    ```bash
+   # Debian / Ubuntu
    sudo apt update && sudo apt upgrade
+   # CentOS 7 / RHEL 7
+   sudo yum update
+   # CentOS 8 / RHEL 8
+   sudo dnf upgrade
+   # Fedora 34–36
+   sudo dnf upgrade
+   # Arch Linux
+   sudo pacman -Syu
+   # openSUSE Leap 15.x
+   sudo zypper refresh && sudo zypper update
    ```
 
 4. **Check disk space:**
@@ -601,5 +634,5 @@ Suggestions for new features are welcome! Please provide:
 
 **⚠️ Security Notice**: This bot provides complete access to your system. Only authorize trusted users and regularly monitor access logs. Use strong bot tokens and keep them secure.
 
-**🔄 Last Updated**: $(date +'%Y-%m-%d')
-**📍 Version**: 1.0.0
+**🔄 Last Updated**: 2026-07-31
+**📍 Version**: 1.0.1
